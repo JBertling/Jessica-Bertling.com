@@ -5,306 +5,627 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Resume Of Jessica Bertling | Web Designer and Front End Web Developer</title>
         <meta name="viewport" content="width=device-width">
-        <style>
-        	html, body, ul, li, h1, h2, h3, h4, p { margin: 0; padding: 0; }
-        	body { 
-        		font-size: 10pt;
-        		font-family: arial, helvetica, sans-serif;
-        		color: #94846e;
-        		background: #fff; 
-    		}
-    		a, a:visited, a:hover, a:active, .clickable {
-    			cursor: pointer;
-    			color: inherit;
-    			text-decoration: none;
-    		}
-    		ul {
-    			margin-left: 15px;
-    		}
-    		li {
-    			margin: 10px 0;
-    		}
-    		.container {
-    			clear: both;
-    			overflow: hidden;
-    			padding-bottom: 40px;
-    			width: 90%;
-    			max-width: 1200px;
-    			margin: 0 auto;
-    		}
-    		section {
-    			clear: both;
-    			overflow: hidden;
-    			margin-top: 40px;
-    			border: solid 1px #ccc;
-    		}
-    		article {
-				padding: 20px 20px 20px 0;
-    		}
-    		article header {
-				margin-bottom: 20px;
-    		}
-    		h1 {
-    			padding: 20px 0;
-    			font-size: 1.5em;
-    		}
-    		h1:first-line {
-    			font-size: 2em;
-    		}
-    		h2 {
-    			padding: 20px;
-    			color: #fff;
-    		}
-    			#workExperience h2,
-    			#community h2 {
-    				background: #6bcbca;
-    				border-right: solid 3px #54b0af;
-    			}
-    			#skills h2,
-    			#education h2 {
-    				background: #ff6766;
-    				border-right: solid 3px #ff4c4b;
-    			}
-    			#software h2 {
-    				background: #97ce68;
-    				border-right: solid 3px #8dca5a;
-    			}
-    		h3 {
-    			display: inline-block;
-    			width: auto;
-    			margin: 0 20px 0 0;
-    			padding: 0 20px 0 0;
-    			border-right: solid 1px #ccc;
-    		}
-    		h4 {
-    			display: inline-block;
-    			width: auto;
-    		}
-    		.date {
-    			display: inline-block;
-    			vertical-align: text-bottom;
-    			margin: 0 20px 0 0;
-    			padding: 1px 5px;
-    			width: auto;
-    			color: #fff;
-    			font-weight: bold;
-    			font-size: .9em;
-    			background: #ccc;
-    			border-radius: 5px;
-    		}
-    		p {
-    			line-height: 1.5em;
-    		}
-    		.description {
-    			margin-bottom: 20px;
-    		}
-    		nav {
-    			padding: 10px 0;
-    			background: #edede4;
-    		}
-    		nav ul {
-    			margin: 0 auto;
-    			display: inline-block;
-    			list-style-type: none;
-    		}
-    		nav li {
-    			display: inline-block;
-    			margin-left: 10px;
-    			padding-left: 10px;
-    			border-left: solid 1px #ccc;
-    		}
-    		nav li:first-child {
-    			margin: 0 0 0 10px;
-    			padding: 0;
-    			border: none;
-    		}
-    		.flex {
-    			float: left;
-    			margin-right: 3.8%;
-    			position: relative;
-    		}
-    		.omega {
-    			float: right;
-    			margin-right: 0 !important;
-    		}
-    		
-    		.col_12 {width:100%; clear: both; overflow: hidden;}
-    		
-    		
-    		@media (min-width : 0px) {
-				.col_3_4_12,
-				.col_9_8_12,
-				.col_6_6_12,
-				.col_6_12_12 {
-					width: 100%;
+        
+        <!-- STYLES FOR BASIC HTML : OFFLINE -->
+        <style>			
+			body, html {
+				color: #323a45; font-size: 100%; font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+				background: #eaedf1;
+			}
+			body, html,
+			h1,
+			ul {
+				margin: 0; padding: 0;
+			}
+			h1 {
+				margin-top: 40px;
+				color: #9ea7b3;
+			}
+			h2 {
+				margin: 0; padding-left: 20px; height: 50px; overflow: hidden;
+				font-size: 1.3em; line-height: 50px; color: #f1f1f3;
+				background: black;
+			}
+			ul {
+				list-style-type: none;
+			}
+			li {
+				padding-left: 20px;
+			}
+			a {
+				color: inherit;
+				text-decoration: none;
+			}
+			p {
+				margin-left: 20px; margin-bottom: 20px; margin-right: 20px;
+				line-height: 1.5em; color: #9ea7b3;
+			}
+			.horiz li {
+				display: inline-block; padding: 0;
+			}
+			header {
+				padding: 20px 20px 0;
+			}
+				header h2 {
+					margin: 0; padding: 0; height: auto;
+					color: #9ea7b3; font-weight: normal; line-height: normal;
+					background: transparent;
 				}
-				.flex {margin-right: 0;}
-				article {padding-left: 20px;}
+				header nav {
+					margin: 50px -20px 0;
+				}
+				header .horiz li {
+					float: left; width: 33.333%;
+					text-align: center;
+				}
+				header .horiz a {
+					display: block; height: 50px; overflow: hidden;
+					color: #fff; font-size: .9em; text-transform: uppercase; line-height: 50px;
+				}
+				header .website {
+					background: #53a9a8;
+				}
+				header .email {
+					background: #e2492f;
+				}
+				header .phone {
+					background: #1fbba6;
+				}
+			article {
+				margin-top: 40px; clear: both; overflow: hidden;
 			}
-			@media (min-width : 768px) {
-				.flex {margin-right: 3.8%;}
-				.omega {margin-right: 0;}
-				.col_3_4_12 {width: 30.8%;}
-    			.col_9_8_12 {width: 65.4%;}
-    			.col_6_6_12 {width: 48.1%;}
-    			.col_6_12_12 {width: 100%;}
+			article.first {
+				margin-top: 0;
 			}
-			@media (min-width : 1024px) {
-				.col_3_4_12 {width: 22.15%;}
-    			.col_9_8_12 {width: 74.05%;}
-    			.col_6_12_12 {width: 48.1%;}
-    			nav {margin-top: 20px;}
+			article header {
+				padding: 0;
 			}
-
+			.container {
+				padding: 10px 20px 0; margin: 0 auto;
+			}
+			.row {
+				clear: both; width: 100%; max-width: 1140px; margin: 0 auto; overflow: hidden;
+			}
+			.rounded {
+				border-radius: 5px;
+			}
+			.roundedTop {
+				border-top-right-radius: 5px;
+				border-top-left-radius: 5px;
+				overflow: hidden;
+			}
+			.uiBlock {
+				clear: both; overflow: hidden;
+				margin-bottom: 40px;
+				background: #ffffff;
+			}
+			.smallList {
+				margin-top: 20px;
+			}
+			.smallList li {
+				padding-bottom: 20px;
+				text-transform: uppercase;
+			}
+			.smallList strong {
+				font-weight: normal; font-size: 1.2em;
+			}
+			.smallList a:hover {
+				color: #53a9a8;
+			}
+			aside .smallList {
+				font-size: .9em;
+			}
+			aside .smallList li {
+				padding-bottom: 10px;
+			}
+			.largeList {
+			}
+			.largeList li {
+				padding-bottom: 30px;
+				font-weight: bold; font-size: 1.1em; color: #9ea7b3;
+			}
+			.largeList li:first-child {
+				padding: 10px 20px; margin-bottom: 20px;
+				color: #fff;
+				background: #9ea7b3;
+			}
+			.largeList p {
+				margin: 0;
+				font-size: .8em;
+				font-weight: normal;
+			}
+			.skills {
+				padding: 20px 0 0 20px;
+				text-align: center;
+			}
+			.skill {
+				display: inline-block;
+				position: relative;
+				margin: 0 auto;
+				width: 140px;
+				height: 140px;
+				background: #14b9d6;
+				border-radius: 70px;
+			}
+			.skillName {
+				position: relative;
+				z-index: 100;
+				margin: 15px auto 0;
+				width: 110px;
+				height: 65px;
+				padding-top: 45px;
+				overflow: hidden;
+				color: #ececec;
+				font-weight: bold;
+				background: #333;
+				border-radius: 55px;
+			}
+			.twoLine {
+				height: 75px;
+				padding-top: 35px;
+			}
+			.threeLine {
+				height: 85px;
+				padding-top: 25px;
+			}
+			.skillBox {
+				height: 240px;
+			}
+			.skillBox p {
+				margin-top: 10px;
+				font-size: .8em;
+				line-height: normal;
+			}
+			.skillBox p:first-line {
+				font-weight: bold;
+			}
+			.pieSlice {
+				position: absolute;
+				top: 0;
+				left: 70px;
+				background: #fff;
+			}
+			.pieSlice.per25 {
+				height: 70px;
+				width: 71px;
+			}
+			.pieSlice.per50 {
+				height: 140px;
+				width: 71px;
+			}
+			#communityInvolvement ul,
+			#education ul {
+				margin-bottom: 20px;
+				color: #9EA7B3;
+			}
+			#communityInvolvement ul.first,
+			#education ul.first {
+				margin-top: 20px;
+			}
+			#communityInvolvement h3,
+			#education h3 {
+				margin: 0;
+			}
+			#education a {
+				color: #53a9a8;
+			}
+			#workExperience a {
+				color: #e2492f;
+			}
+			#communityInvolvement a {
+				color: #1fbba6;
+			}
+			.col_3_4_12,
+			.col_3_6_6,
+			.col_3_12_12,
+			.col_4_5_12,
+			.col_4_12_12,
+			.col_8_7_12,
+			.col_8_12_12,
+			.col_9_8_12,
+			.col_9_12_12,
+			.col_12_6_12 {
+				float: left; position: relative; margin-right: 3.8%;
+			}
+			.omega {
+				margin-right: 0;
+			}
+			/*Desktop Styles */
+			@media only screen and (min-width: 900px) {
+				.col_3_4_12 {
+					width: 22.15%;
+				}
+				.col_3_12_12 {
+					width: 22.15%;
+				}
+				.col_3_6_6 {
+					width: 22.15%;
+				}
+				.col_4_5_12 {
+					width: 30.8%;
+				}
+				.col_4_12_12 {
+					width: 30.8%;
+				}
+				.col_8_7_12 {
+					width: 65.4%;
+				}
+				.col_8_12_12 {
+					width: 65.4%;
+				}
+				.col_9_8_12 {
+					width: 74.05%;
+				}
+				.col_9_12_12 {
+					width: 74.05%;
+				}
+				.col_12_6_12 {
+					clear: both; width: 100%; margin-right: 0;
+				}
+				p {
+					width: 80%;
+				}
+			}
+			/*Tablet Styles */
+			@media only screen and (min-width: 500px) and (max-width: 900px) {
+				.col_3_4_12 {
+					width: 30.8%;
+				}
+				.col_3_6_6 {
+					width: 45.1%;
+				}
+				.col_3_12_12 {
+					clear: both; width: 100%;
+				}
+				.col_4_5_12 {
+					width: 39.45%;
+				}
+				.col_4_12_12 {
+					clear: both; width: 100%;
+				}
+				.col_8_7_12 {
+					width: 56.75%;
+				}
+				.col_9_8_12 {
+					width: 65.4%;
+				}
+				.col_8_12_12 {
+					clear: both; width: 100%;
+				}
+				.col_9_12_12 {
+					clear: both; width: 100%;
+				}
+				.col_12_6_12 {
+					width: 45.1%;
+				}
+				.tablet-margin {
+					margin-right: 0 !important;
+				}
+			}
+			/*Mobile Styles */
+			@media only screen and (max-width: 500px) {
+				.col_3_4_12 {
+					clear: both; width: 100%; margin-right: 0;
+				}
+				.col_3_6_6 {
+					width: 45.1%;
+				}
+				.col_3_12_12 {
+					clear: both; width: 100%; margin-right: 0;
+				}
+				.col_4_5_12 {
+					clear: both; width: 100%;
+				}
+				.col_4_12_12 {
+					clear: both; width: 100%;
+				}
+				.col_8_7_12 {
+					clear: both; width: 100%; margin-right: 0;
+				}
+				.col_8_12_12 {
+					clear: both; width: 100%;
+				}
+				.col_9_8_12 {
+					clear: both; width: 100%; margin-right: 0;
+				}
+				.col_9_12_12 {
+					clear: both; width: 100%; margin-right: 0;
+				}
+				.col_12_6_12 {
+					clear: both; width: 100%; margin-right: 0;
+				}
+				header .horiz li {
+					width: 100%;
+					text-align: left;
+				}
+				header .horiz a {
+					padding-left: 20px;
+				}
+				.skill {
+					width: 120px;
+					height: 120px;
+					border-radius: 60px;
+				}
+				.skillName {
+					margin: 5px auto 0;
+				}
+			}
         </style>
-
     </head>
     <body>
     	<div class="container">
-    		<div>
-	        	<header>
-		    		<h1 class="col_6_12_12 flex">Jessica Bertling<br />Web Designer &amp; Front End Developer</h1>
-		    		<nav class="col_6_12_12 flex omega">
-		    			<ul>
-		    				<li><a href="" title="">Bertling.Jess@gmail.com</a></li>
-		    				<li><a href="" title="">www.Jessica-Bertling.com</a></li>
-		    				<li>319-654-5880</li>
-		    			</ul>
-		    		</nav>
-		    	</header>
+    		<div class="row">
+    			<div class="col_12">
+    				<div class="col_9_12_12">
+    					<header class="uiBlock roundedTop">
+    						<h1>Jessica Bertling</h1>
+    						<h2>Web Designer &amp; Front End Developer</h2>
+    						<nav>
+    							<ul class="horiz">
+    								<li>
+    									<a class="website" href="http://www.Jessica-Bertling.com" title="Jessica Bertling | Web Designer & Front End Developer">
+    										Jessica-Bertling.com
+										</a>
+    								</li>
+    								<li>
+    									<a class="email" href="mailTo:Bertling.Jess@gmail.com" title="Email Jessica">
+    										Bertling.Jess@gmail.com
+										</a>
+    								</li>
+    								<li>
+    									<a class="phone" href="tel:13196545880" title="Click to Call">
+    										(319) 654-5880
+    									</a>
+									</li>
+    							</ul>
+    						</nav>
+    					</header>
+    				</div>
+    				<div class="col_3_12_12 omega">
+    					<div class="uiBlock roundedTop">
+    						<h2>Jump To</h2>
+    						<ul class="smallList">
+    							<li>
+    								<a href="#workExperience" title="Work Experience">Work Experience</a>
+    							</li>
+    							<li>
+    								<a href="#skills" title="Web Design and Development Skills">Skills</a>
+    							</li>
+    							<li>
+    								<a href="#communityInvolvement" title="Software Development Community Involvement">Community Involvement</a>
+    							</li>
+    							<li>
+    								<a href="#education" title="Design and Development Education">Education</a>
+    							</li>
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
     		</div>
-    		<div class="col_12">
-	    		<section id="workExperience">
-	    			<div class="flex col_3_4_12"><h2>Work Experience</h2></div>
-	    			<div class="flex col_9_8_12 omega">
-	    				<article>
-	    					<header>
-	    						<p class="date">09/2012 - Present</p>
-		    					<h3>UI/UX Designer</h3>
-		    					<h4>Mag Retail &amp; Media Group</h4>
-	    					</header>
-		    				<p class="description">
-		    					In September of 2012 I was promoted to UI/UX Designer, working on a small team responsible for the usability, 
-		    					design, and front end development of JPCycles.com, Motorcycle-Superstore.com, CycleNews.com, and Motorcycle-USA.com. 
-		    					I'm currently UI lead on a project developing a responsive ecommerce platform which will house multiple brands. 
-							</p>
-							<strong>Responsibilities:</strong>
-							<ul>
-								<li>Efficient and symantic HTML5/CSS</li>
-								<li>Custom responsive grid development</li>
-								<li>Design and development of responsive ecommerce interface</li>
-								<li>Creating robust JavaScript solutions in a responsive environment, requiring speed and efficiency for page load. Outside of validation, no plug-ins.</li>
-								<li>Lead up the front end development of the new platform remotely.  Working towards moving to a more agile work flow.</li>
-							</ul>
-						</article>
-	    			</div>
-	    			<div class="flex col_9_8_12 omega">
-	    				<article>
-	    					<header>
-	    						<p class="date">11/2007 - 09/2012</p>
-	    						<h3>Web Designer 2</h3>
-	    						<h4>J&amp;P Cycles</h4>
-    						</header>
-		    				<p class="description">
-		    					While my position started out primarily doing HTML e-mails and graphics, I quickly moved into the interface design and development of the current J&P Cycles site, launched in March of 2008. Until the last few months I was the sole designer/front end developer for all of the HTML, CSS and JQuery used on both the J&P Cycles e-commerce sites and all sub domains, bringing in ~45 million dollars a year revenue.  
-		    				</p>
-		    				<strong>Responsibilities:</strong>
-		    				<ul>
-		    					<li>Efficient and symantic HTML5/CSS/JQuery</li>
-		    					<li>Maintenance of the support site, built on a third party PHP framework (RightNow), and other sub domains such a the careers site and company blog.</li>
-		    					<li>Design and usability, including in person usability tests and software based A/B testing</li>
-		    					<li>Worked directly with SEO and usability consultants, RKG and UserTesting.com</li>
-		    				</ul>
-	    				</article>
-	    			</div>
-    			</section>
-	    		<section id="skills">
-	    			<div class="flex col_3_4_12"><h2>Skills</h2></div>
-	    			<div class="flex col_9_8_12 omega">
-	    				<article>
-		    				<ul>
-		    					<li>Firm understanding of responsive design and implementation.</li>
-		    					<li>Efficient HTML, CSS and JavaScript, including advanced Jquery and beginner Backbone.js.</li>
-		    					<li>In-person usability and software based A/B testing. Analyzing results for user and data driven design/development.</li>
-		    					<li>Advanced knowledge of SEO and how front end development impacts organic rankings.</li>
-		    				</ul>
-		    			</article>
-	    			</div>
-	    		</section>
+    		<div class="row">
+    			<div class="col_12">
+    				<section class="uiBlock roundedTop" id="workExperience">
+    					<h2>Work Experience</h2>
+    					<article class="first">
+    						<div class="col_9_12_12">
+	    						<header class="col_4_12_12">
+	    							<ul class="largeList">
+	    								<li>MAG Retail &amp; Media</li>
+	    								<li class="col_12_6_12 omega">UI/UX Designer</li>
+	    								<li class="col_12_6_12 omega">09/2012 - Present</li>
+	    								<li class="col_12_6_12 omega">Daytona Beach, FL</li>
+	    								<li class="col_12_6_12 omega"><a href="http://www.MAGGroup.com" title="Motorsport Aftermarket Group" rel="nofollow">MAGGroup.com</a></li>
+	    							</ul>
+	    						</header>
+	    						<div class="col_8_12_12 omega">
+	    							<p>
+	    								I'm currently UI lead on a project 
+										developing a responsive ecommerce platform which 
+										will house multiple brands. My primary roles in this project have been the creation
+										of a custom responsive grid, design and front end development for the respnosive ecommerce
+										interface, and creating robust JavaScript solutions for the responsive environment.
+	    							</p>
+	    							<p>
+	    								I also work on maintenance and necessary adjustments to 
+	    								<a href="http://www.jpcycles.com" title="J&amp;P Cycles" rel="nofollow">JPCycles.com</a>, 
+										<a href="http://www.motorcycle-superstore.com" title="Motorcycle Superstore" rel="nofollow">Motorcycle-Superstore.com</a>,
+										<a href="http://www.cyclenews.com" title="Cycle News" rel="nofollow">CycleNews.com</a>,
+										and 
+										<a href="http://www.motorcycle-usa.com" title="MotorcycleUSA">Motorcycle-USA.com</a>.
+	    							</p>
+	    						</div>
+    						</div>
+	    					<aside class="col_3_12_12 omega">
+	    						<ul class="smallList">
+	    							<li><strong>Primary Skills Used</strong></li>
+	    							<li class="col_12_6_12 omega">HTML5</li>
+	    							<li class="col_12_6_12 omega">CSS3</li>
+	    							<li class="col_12_6_12 omega">Sass</li>
+	    							<li class="col_12_6_12 omega">JS / JQuery</li>
+	    							<li class="col_12_6_12 omega">Usability</li>
+	    							<li class="col_12_6_12 omega">Responsive Design</li>
+	    							<li class="col_12_6_12 omega">Responsive Grid Creation</li>
+	    						</ul>
+	    					</aside>
+    					</article>
 
-	    		<section id="software">
-	    			<div class="flex col_3_4_12"><h2>Software</h2></div>
-	    			<div class="flex col_9_8_12 omega">
-		    			<article>
-		    				<ul>
-		    					<li>Firm understanding of responsive design and implementation.</li>
-		    					<li>Efficient HTML, CSS and JavaScript, including advanced Jquery and beginner Backbone.js.</li>
-		    					<li>In-person usability and software based A/B testing. Analyzing results for user and data driven design/development.</li>
-		    					<li>Advanced knowledge of SEO and how front end development impacts organic rankings.</li>
-		    				</ul>
-		    			</article>
-	    			</div>
-	    		</section>
-	    		<section id="community">
-	    			<div class="flex col_3_4_12"><h2>Community Involvement</h2></div>
-	    			<div class="flex col_9_8_12 omega">
-		    			<article>
-		    				<ul>
-		    					<li>Former member of Iowa JS, a Cedar Rapids, Iowa based JavaScript usergroup.</li>
-	    						<li>Former member and speaker at CRINETA, a Cedar Rapids, Iowa based .net user group.</li>
-	    						<li>Current attendee of local CodeCamps and BarCamps.</li>
-		    				</ul>
-		    			</article>
-	    			</div>
-	    		</section>
-	    		<section id="education">
-	    			<div class="flex col_3_4_12"><h2>Education</h2></div>
-	    			<div class="flex col_9_8_12 omega">
-		    			<article>
-		    				<header>
-		    					<p class="date">2004-2006</p>
-		    					<h3>Daytona Beach Community College</h3>
-		    					<h4>Daytona Beach, Florida</h4>
-		    				</header>
-		    				<p>
-		    					AAS Digital Media with Design Option – Graduated with high honors
-		    				</p>
-		    			</article>
-	    			</div>
-	    			<div class="flex col_9_8_12 omega">
-		    			<article>
-		    				<header>
-		    					<p class="date">2002-2004</p>
-		    					<h3>Kirkwood Community College</h3>
-		    					<h4>Cedar Rapids, Iowa</h4>
-		    				</header>
-		    				<p>N/A Copmuter Programming and Liberal Arts</p>
-		    			</article>
-	    			</div>
-	    		</section>
-	    	</div>
+    					<article>
+    						<div class="col_9_12_12">
+	    						<header class="col_4_12_12">
+	    							<ul class="largeList">
+	    								<li>J&amp;P Cycles</li>
+	    								<li class="col_12_6_12 omega">Web Designer II</li>
+	    								<li class="col_12_6_12 omega">11/2007 - 09/2012</li>
+	    								<li class="col_12_6_12 omega">Anamosa, IA</li>
+	    								<li class="col_12_6_12 omega"><a href="http://www.JPCycles.com" title="J&amp;P Cycles" rel="nofollow">JPCycles.com</a></li>
+	    							</ul>
+	    						</header>
+	    						<div class="col_8_12_12 omega">
+	    							<p>
+		    							While my position started out primarily doing HTML e-mails and graphics, I quickly 
+		    							moved into the interface design and development of the current 
+		    							<a href="http://www.jpcycles.com" title="J&amp;P Cycles" rel="nofollow">J&amp;P Cycles site</a>, 
+		    							launched in March of 2008. Until the last few months I was the sole designer/front 
+		    							end developer for all of the HTML, CSS and JQuery used on both the J&amp;P Cycles 
+		    							e-commerce sites and all sub domains, bringing in ~45 million dollars a year revenue. 
+	    							</p>
+	    							<p>
+	    								My work can be viewed on the 
+	    								<a href="http://support.jpcycles.com" title="J&amp;P Cycles Support Site" rel="nofollow">J&amp;P Cycles support site</a>, where I did all the design
+	    								and front end development based on a third party PHP support platform (RightNow). I
+	    								also did the front end development on their 
+	    								<a href="http://jobs.jpcycles.com" title="J&amp;P Cycles Career Site">careers site</a>, which received a 
+	    								<a href="http://www.entrepreneur.com/article/217818" title="Career Site Article">write up
+	    								in Entreprenuer Magazine</a> shortly after release.
+	    							</p>
+	    						</div>
+    						</div>
+	    					<aside class="col_3_12_12 omega">
+	    						<ul class="smallList">
+	    							<li><strong>Primary Skills Used</strong></li>
+	    							<li class="col_12_6_12 omega">HTML/HTML5</li>
+	    							<li class="col_12_6_12 omega">CSS3</li>
+	    							<li class="col_12_6_12 omega">JS/JQuery</li>
+	    							<li class="col_12_6_12 omega">SEO</li>
+	    							<li class="col_12_6_12 omega">Usability</li>
+	    							<li class="col_12_6_12 omega">A/B Testing</li>
+	    						</ul>
+	    					</aside>
+    					</article>
+    				</section>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col_12">
+    				<section class="uiBlock roundedTop" id="skills">
+    					<h2>Skills</h2>
+    					<article class="first">
+    						<div class="col_9_8_12">
+    							<div class="skills">
+									<div class="col_3_6_6 skillBox">
+										<div class="skill">
+											<div class="skillName">
+												HTML
+											</div>
+										</div>
+										<p>100%<br />10 Years Experience</p>
+									</div>
+									<div class="col_3_6_6 skillBox tablet-margin">
+										<div class="skill">
+											<div class="skillName">
+												CSS
+											</div>
+										</div>
+										<p>100%<br />10 Years Experience</p>
+									</div>
+									<div class="col_3_6_6 skillBox">
+										<div class="skill">
+											<div class="skillName twoLine">
+												Responsive Design
+											</div>
+										</div>
+										<p>100%<br />2 Years Experience</p>
+									</div>
+									<div class="col_3_6_6 skillBox omega">
+										<div class="skill">
+											<div class="pieSlice per25"></div>
+											<div class="skillName">
+												JQuery
+											</div>
+										</div>
+										<p>75%<br />5 Years Experience</p>
+									</div>
+									<div class="col_3_6_6 skillBox">
+										<div class="skill">
+											<div class="pieSlice per25"></div>
+											<div class="skillName">
+												Sass
+											</div>
+										</div>
+										<p>75%<br />1 Years Experience</p>
+									</div>
+									<div class="col_3_6_6 skillBox tablet-margin">
+										<div class="skill">
+											<div class="pieSlice per25"></div>
+											<div class="skillName threeLine">
+												Adobe Photoshop &amp; Illustrator
+											</div>
+										</div>
+										<p>75%<br />10 Years Experience</p>
+									</div>
+									<div class="col_3_6_6 skillBox">
+										<div class="skill">
+											<div class="skillName twoLine">
+												Usability &amp; A/B Testing
+											</div>
+										</div>
+										<p>100%<br />5 Years Experience</p>
+									</div>
+									<div class="col_3_6_6 skillBox omega">
+										<div class="skill">
+											<div class="pieSlice per50"></div>
+											<div class="skillName">
+												Wordpress
+											</div>
+										</div>
+										<p>50%<br />3 Years Experience</p>
+									</div>
+    							</div>
+
+    						</div>
+    						<aside class="col_3_4_12 omega">
+    							<ul class="largeList">
+    								<li>Concepts</li>
+    								<li>SEO Strategies<br /><p>Front End techniques to improve organic search rankings.</p></li>
+    								<li>Agile Development<br /><p>Creating/managine agile workflows for a design team.</p></li>
+    								<li>Progressive Enhancement<br /><p>Creating forward thinking designs and experience that gracefully degrade in older browsers or devices.</p></li>
+    								<li>MVC Frameworks</li>
+    							</ul>	
+    						</aside>
+    					</article>
+    				</section>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col_12">
+    				<section class="uiBlock roundedTop" id="communityInvolvement">
+    					<h2>Community Involvement</h2>
+    					<ul class="first">
+    						<li><h3>User Groups</h3></li>
+	    					<li>Former member of <a href="http://www.meetup.com/iowajs/" title="Iowa JS">Iowa JS</a>, a Cedar Rapids, Iowa based JavaScript usergroup.</li>
+    						<li>Former member and <a href="http://crineta.org/349/june-4th-listen-be-led-better-usability-through-user-data/">speaker</a> at <a href="http://crineta.org/" title="CRineta">CRineta</a>, a Cedar Rapids, Iowa based .net user group.</li>
+    					</ul>
+    					<ul>
+    						<li><h3>Educational Conferences</h3></li>
+    						<li>An Event Apart</li>
+    						<li>Iowa Code Camp</li>
+    						<li>Local BarCamps (Iowa City, Orlando)</li>
+    					</ul>
+    					<ul>
+    						<li><h3>Open Source Projects</h3></li>
+    						<li>Creator of <a href="http://www.werewolf-grid.com" title="Werewolf 12 Column Responsive Grid">Werewolf Grid</a>, a shapeshifting 12 column responsive grid.</li>
+    						<li><a href="https://github.com/dahlbys/GTFSimple" title="GTFSimple - Create a general transit feed used by Google Transit">GTFSimple</a> - Currently contributing the front end development and UI/UX design on open source project.</li>
+    					</ul>
+    				</section>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col_12">
+    				<section class="uiBlock roundedTop" id="education">
+    					<h2>Education</h2>
+    					<ul class="first">
+    						<li><h3>Daytona Beach Community College (Now Daytona State College)</h3></li>
+    						<li>2004-2006 Daytona Beach, Florida</li>
+    						<li>AAS Digital Media with Design Option – Graduated with high honors.</li>
+    					</ul>
+    					<ul>
+    						<li><h3>Kirkwood Community College</h3></li>
+    						<li>2002-2004 Cedar Rapids, Iowa</li>
+    						<li>N/A Computer Programming and Liberal Arts.</li>
+    					</ul>
+    				</section>
+    			</div>
+    		</div>
     	</div>
-    	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    	<script>
-        	$(document).ready(function () {
-				setHeights();
-        	});
-        	$(window).resize(function() {
-        		setHeights();
-        	});
-        	function setHeights() {
-        		if ($(window).width() > 767) {
-	        		$("section").each(function() {
-	        			$(this).height("auto").children().children("h2").height("auto");
-	        			var sectionHeight = $(this).height() - 40 + "px";
-	        			$(this).children().children("h2").height(sectionHeight);
-	        			
-	        		});
-        		} else {
-        			$("section h2").height("auto");
-        		}
-        	}
-        	
-        </script>
     </body>
 </html>
