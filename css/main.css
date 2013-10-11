@@ -1,15 +1,3 @@
-/*
- * HTML5 Boilerplate
- *
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
 html,
 button,
 input,
@@ -17,18 +5,13 @@ select,
 textarea {
     color: #333;
 }
+
 body {
     font-size: 1em;
     font-family: arial, helvetica, sans-serif;
     line-height: 1.4;
     background: #333;
 }
-
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -40,30 +23,10 @@ body {
     text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-
 img {
     vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
 
 fieldset {
     border: 0;
@@ -71,17 +34,9 @@ fieldset {
     padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
 textarea {
     resize: vertical;
 }
-
-/* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
 
 .chromeframe {
     margin: 0.2em 0;
@@ -90,17 +45,16 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 html,
 body,
 .container:first-child {
 	min-height: 100%;
 }
+
 .display-font {
 	font-family: 'Oleo Script', cursive;
 }
+
 a,
 a:visited,
 a:hover,
@@ -110,6 +64,7 @@ a:active,
 	text-decoration: none;
 	outline: none;
 }
+
 .container {
 	max-width: 1600px;
 }
