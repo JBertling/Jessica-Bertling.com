@@ -11,15 +11,120 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        
+        <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" >
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700" rel="stylesheet" >
 
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/werewolf.css">
         <link rel="stylesheet" href="css/main.css">
         
-        <link href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700|Pacifico|Leckerli+One|Lobster' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <div class="container" id="home">
+    	<header>
+    		<div class="row">  			
+	    		<div class="col_3_12_12 logo">
+	    			Jessica Bertling
+				</div>
+				<nav class="col_9_12_12 omega floatright desktop-only">
+					<ul class="horiz textright">
+						<li class="active"><a href="#home" title="">Home</a></li>
+						<li><a href="#about" title="">About</a></li>
+						<li><a href="#portfolio" title="">Portfolio</a></li>
+						<li><a href="#blog" title="">Blog</a></li>
+						<li><a href="#contact" title="">Contact</a></li>
+					</ul>
+				</nav>			
+			</div>
+    	</header>
+    	<section class="container" id="home">
+    		<div class="row">
+    			Home
+    		</div>
+    	</section>
+    	<section class="container" id="about">
+    		<div class="row">
+    			About
+    		</div>
+    	</section>
+    	<section class="container" id="portfolio">
+    		<div class="row textcenter">
+    			<h2>Portfolio</h2>
+    			<nav>
+    				<ul class="horiz">
+    					<li class="active"><a href="#web">Web</a></li>
+    					<li><a href="#emails">Emails</a></li>
+    					<li><a href="#misc">Print &amp; Miscellaneous</a></li>
+    				</ul>
+    			</nav>
+    			<div class="portfolio-grid">
+    				<figure class="col_3_6_12">
+    					<img src="http://www.jessica-bertling.com/img/werewolf-icon.png" />
+    					<div class="portfolio-hover"></div>
+    				</figure>
+    				<figure class="col_3_6_12 tablet-margin">
+    					<img src="http://www.jessica-bertling.com/img/werewolf-icon.png" />
+    					<div class="portfolio-hover"></div>
+    				</figure>
+    				<figure class="col_3_6_12">
+    					<img src="http://www.jessica-bertling.com/img/werewolf-icon.png" />
+    					<div class="portfolio-hover"></div>
+    				</figure>
+    				<figure class="col_3_6_12 tablet-margin omega">
+    					<img src="http://www.jessica-bertling.com/img/werewolf-icon.png" />
+    					<div class="portfolio-hover"></div>
+    				</figure>
+    			</div>
+    		</div>
+    	</section>
+    	<section class="container" id="blog">
+    		<div class="row">
+    			Blog
+    		</div>
+    	</section>
+    	<section class="container" id="contact">
+    		<div class="row">
+    			<h2>Get Ahold Of Me</h2>
+    			<h3>I can tell that we are gonna be friends.</h3>
+    		</div>
+    		<div class="selfclear textcenter">
+    			<form>
+    				<h4>Send Me An Email</h4>
+    				<fieldset>
+						<div class="row">
+							<p class="validation"></p>
+							<input type="text" placeholder="Your Name" />
+						</div>
+						<div class="row">
+							<p class="validation"></p>
+							<input type="email" placeholder="Your Email" />
+						</div>
+						<div class="row">
+							<textarea rows="5" placeholder="Message" /></textarea>
+						</div>
+						<div class="row">
+							<a href="" title="" class="button">Send Message</a>
+						</div>
+    				</fieldset>
+    			</form>
+			</div>
+    	</section>
+    	<footer>
+    		<div class="row">
+	    		<a class="col_3_4_12 logo" href="#" title="Back To Top">
+	    			Jessica Bertling
+				</a>
+				<p class="col_9_8_12 omega copyright">
+					&copy; 2013 Jessica Bertling. All rights reserved.
+				</p>   			
+    		</div>
+    	</footer>
+    	
+    	
+    	
+    	
+    	
+    	
+        <!--div class="container" id="home">
 			<header class="row">
 				<div class="col_12 display-font">
 					<div class="col_4_10_9 logo">
@@ -33,7 +138,7 @@
 							<li><a href="#home" title="">home</a></li>
 							<li><a href="#skills" title="">skills</a></li>
 							<li><a href="#portfolio" title="">portfolio</a></li>
-							<!--li><a href="#blog" title="">blog</a></li-->
+							<li><a href="#blog" title="">blog</a></li>
 							<li><a href="#about" title="">about</a></li>
 							<li><a href="#contact" title="">contact</a></li>
 						</ul>
@@ -165,7 +270,7 @@
 				</div>
 			</section>
 		</div>
-		<!--div class="container blog color-split" id="blog">
+		<div class="container blog color-split" id="blog">
 			<section class="row">
 				<h2 class="display-font">Read Things I've Written</h2>
 				<div class="icon-sections">
@@ -187,7 +292,7 @@
 					</div>
 				</div>
 			</section>
-		</div-->
+		</div>
 		<div class="container about color-split" id="about">
 			<section class="row">
 				<div class="col_12">
@@ -308,7 +413,7 @@
 		<a href="#home" class="back-to-top">
 			<img src="img/up-arrow-icon.png" /><br />
 			Back To Top
-			</a>
+			</a-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/main.js"></script>
