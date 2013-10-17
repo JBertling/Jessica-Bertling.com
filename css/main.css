@@ -33,7 +33,8 @@ a:active,
 }
 
 
-a.button {
+a.button,
+.button {
     display: inline-block;
     padding: 10px;
     color: #fff;
@@ -348,18 +349,55 @@ section.homesection span {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: rgba(39,41,55,0);
+	opacity: 0;
 	background-image: none;
 	background-position: center center;
 	background-repeat: no-repeat;
 	transition: all ease 0.3s;
-	cursor: pointer;
 }
 
-.portfolio-grid figure:hover .portfolio-hover {
-	background-color: rgba(39,41,55,0.7);
-	background-image: url("../img/development-icon.png");
+.portfolio-grid figure:hover .portfolio-hover,
+.portfolio-grid .coming-soon .portfolio-hover {
+	opacity: 1;
+	background-color: rgba(13,20,30,0.9);
 }
+
+.portfolio-hover ul {
+	margin-top: 30px;
+}
+
+.portfolio-hover li {
+	cursor: pointer;
+	width: 40px;
+	text-align: center;
+}
+
+.portfolio-hover li:first-child {
+	margin-right: 10px;
+}
+
+.portfolio-hover li:hover {
+}
+
+.portfolio-hover li a {
+	display: block;
+}
+
+.portfolio-hover h4 {
+	margin-top: 20%;
+	margin-bottom: 5%;
+}
+
+.coming-soon p {
+	padding-top: 20%;
+	color: #ff643e;
+	font-family: 'Oswald', sans-serif;
+	font-size: 46px;
+	line-height: 54px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
 
 /* CONTACT STYLES */
 #contact {
@@ -367,6 +405,10 @@ section.homesection span {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top right;
+}
+
+.skills {
+	margin-bottom: 15px;
 }
 
 .skills .display-bar {

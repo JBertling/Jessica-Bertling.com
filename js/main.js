@@ -1,9 +1,13 @@
 $(document).ready(function() {
+	setupSlideIns();
+	
 	$(".navTrigger").click(function () {
 		$(this).next('nav').slideToggle('fast','linear');
 	});
 });
 $(window).resize(function() {
+	setupSlideIns();
+	
 	var secondBreak = "900";
 	var firstBreak = "500";
 	var windowSize = "";
@@ -33,6 +37,8 @@ $(window).resize(function() {
 		
 	}
 });
+
+
 
 
 (function($) {
@@ -65,24 +71,25 @@ $(window).resize(function() {
     
 })(jQuery);
 
-var win = $(window);
+function setupSlideIns() {
+	var win = $(window);
+	var allMods = $(".lets-animate");
 
-var allMods = $(".lets-animate");
+	allMods.each(function(i, el) {
+  		var el = $(el);
+  		if (el.visible(true)) {
+    		el.addClass("already-visible"); 
+	  	} 
+	});
 
-allMods.each(function(i, el) {
-  var el = $(el);
-  if (el.visible(true)) {
-    el.addClass("already-visible"); 
-  } 
-});
+	win.scroll(function(event) { 
+  		allMods.each(function(i, el) {
+	    	var el = $(el);
+	    	if (el.visible(true)) {
+		      	el.addClass("come-in"); 
+		    }
+  		});
+	});
+}
 
-win.scroll(function(event) {
-  allMods.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } 
-  });
-  
-});
 
