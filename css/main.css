@@ -582,6 +582,29 @@ section.homesection span {
 	footer {
 		padding: 10px 0;
 	}
+	.come-in {
+	  transform: translateY(150px);
+	  animation: come-in 0.1s ease forwards;
+	}
+	.come-in:nth-child(2),
+	.come-in:nth-child(6),
+	.come-in:nth-child(10) {
+	  animation-duration: 0.3s; /* So they look staggered */
+	}
+	.come-in:nth-child(3),
+	.come-in:nth-child(7),
+	.come-in:nth-child(11) {
+	  animation-duration: .6s; /* So they look staggered */
+	}
+	.come-in:nth-child(4),
+	.come-in:nth-child(8),
+	.come-in:nth-child(12) {
+	  animation-duration: .9s; /* So they look staggered */
+	}
+	.come-in:nth-child(5),
+	.come-in:nth-child(9) {
+	  animation-duration: 0.1s; /* So they look staggered */
+	}
 }
 
 @media only screen and (max-width: 500px) {
@@ -594,10 +617,10 @@ section.homesection span {
 		background-image: url(../img/coffee-background.jpg);
 	}
 	a.button,
-        .button,
-        input[type="submit"] {
+    .button,
+    input[type="submit"] {
 		display: block;
-width: inherit;
+		width: inherit;
 	}
 	.container {
 		width: inherit;
@@ -635,5 +658,28 @@ width: inherit;
         }
 	section.homesection span {
                background-color: rgba(255,255,255,0.4);
+	}
+	.come-in {
+	  transform: translateY(150px);
+	  animation: come-in 0.1s ease forwards;
+	}
+	.come-in:nth-child(2),
+	.come-in:nth-child(6),
+	.come-in:nth-child(10) {
+	  animation-duration: 0.3s; /* So they look staggered */
+	}
+	.come-in:nth-child(3),
+	.come-in:nth-child(7),
+	.come-in:nth-child(11) {
+	  animation-duration: .6s; /* So they look staggered */
+	}
+	.come-in:nth-child(4),
+	.come-in:nth-child(8),
+	.come-in:nth-child(12) {
+	  animation-duration: .9s; /* So they look staggered */
+	}
+	.come-in:nth-child(5),
+	.come-in:nth-child(9) {
+	  animation-duration: 0.1s; /* So they look staggered */
 	}
 }
